@@ -35,7 +35,7 @@ public:
         else if(matcherType=="bf")
         {
             if(descType=="orb")
-                matcher = cv::BFMatcher::create(cv::NORM_HAMMING);
+                matcher = cv::BFMatcher::create(cv::NORM_HAMMING, false);
             else
                 matcher = cv::BFMatcher::create(cv::NORM_L1);
         }
